@@ -6,7 +6,7 @@ Today all pictures come with metadata like GPS info, camera, etc. Here is a usef
 
 [https://github.com/Resistor52/hitc-dev/blob/main/lab2.4/lambda\_function.zip](https://github.com/Resistor52/hitc-dev/blob/main/lab2.4/lambda_function.zip)
 
-![](../images/Img_01_Lab_2.4.png)
+![](https://github.com/rodrigopace/hello-world/blob/master/images/Img_01_Lab_2.4.png)
 
 1. From AWS Management Console, time to create the buckets that will be used for our function. Create one called &quot;input-image-\&lt;myPhoneNumber\&gt;&quot; and another called &quot;output-image-\&lt;myPhoneNumber\&gt;&quot; using the procedure below.
 
