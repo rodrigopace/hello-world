@@ -14,13 +14,13 @@ Important - The buckets should start with the requested names, otherwise the cle
 
 ![](images/Img_02_Lab_2.4.png?raw=true)
 
-![](RackMultipart20220526-1-grk0zj_html_9e64bcfc687b353b.png)
+![](images/Img_03_Lab_2.4.png?raw=true)
 
-![](RackMultipart20220526-1-grk0zj_html_7719d602a23339ed.png)
+![](images/Img_04_Lab_2.4.png?raw=true)
 
 Enable encryption by default and click in Create Bucket.
 
-![](RackMultipart20220526-1-grk0zj_html_def2a673213210be.png)
+![](images/Img_05_Lab_2.4.png?raw=true)
 
 Repeat this step for output bucket.
 
