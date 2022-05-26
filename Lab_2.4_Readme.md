@@ -1,4 +1,4 @@
-##**Lambda and image clean-up lab**
+##Lambda and image clean-up lab
 
 Today all pictures come with metadata like GPS info, camera, etc. Here is a useful function to clean-up it and keep some of our privacy.
 
