@@ -24,132 +24,132 @@ Enable encryption by default and click in Create Bucket.
 
 Repeat this step for output bucket.
 
-![](RackMultipart20220526-1-grk0zj_html_da12ca72bc24fa2.png)
+![](images/Img_06_Lab_2.4.png?raw=true)
 
 Info - As S3 uses the global unique bucket, two students can&#39;t use the same bucket name.
 
 1. Create a custom policy available in https://github.com/Resistor52/hitc-dev/blob/main/lab2.4/s3\_policy.json to add necessary permissions for the file transformation lambda function..
 
-![](RackMultipart20220526-1-grk0zj_html_e95ed360cc6f13d3.png)
+![](images/Img_07_Lab_2.4.png?raw=true)
 
 Select Policies
 
-![](RackMultipart20220526-1-grk0zj_html_bdfc4f3542ce75fd.png)
+![](images/Img_08_Lab_2.4.png?raw=true)
 
 Select Create policy
 
-![](RackMultipart20220526-1-grk0zj_html_35285f43e1e5765e.png)
+![](images/Img_01_Lab_2.4.png?raw=true)
 
 Click in JSON file and paste the file content available in the json file previously downloaded.
 
-![](RackMultipart20220526-1-grk0zj_html_1de22d2cc202f500.png)
+![](images/Img_10_Lab_2.4.png?raw=true)
 
 Click in Next review
 
-![](RackMultipart20220526-1-grk0zj_html_622e87869272da8c.png)
+![](images/Img_11_Lab_2.4.png?raw=true)
 
 Type the policy name and click in Create policy
 
-![](RackMultipart20220526-1-grk0zj_html_5f1706451e20ebdf.png)
+![](images/Img_12_Lab_2.4.png?raw=true)
 
 1. Create the lambda function that will be used to clean up the image when it is uploaded:
 
-![](RackMultipart20220526-1-grk0zj_html_49ce555d7813f4e6.png)
+![](images/Img_13_Lab_2.4.png?raw=true)
 
-![](RackMultipart20220526-1-grk0zj_html_2db4afb5d15d5253.png)
+![](images/Img_14_Lab_2.4.png?raw=true)
 
 Select Use a blueprint and type s3-get-object-python.
 
-![](RackMultipart20220526-1-grk0zj_html_acb22f72dd82ae87.png)
+![](images/Img_15_Lab_2.4.png?raw=true)
 
 Select the available blueprint and click in configure.
 
-![](RackMultipart20220526-1-grk0zj_html_e7c44444fd015d8.png)
+![](images/Img_16_Lab_2.4.png?raw=true)
 
 Add a function name and select Create a new role with basic Lambda permissions
 
-![](RackMultipart20220526-1-grk0zj_html_145b7940cc6bbade.png)
+![](images/Img_17_Lab_2.4.png?raw=true)
 
 Scroll down and select Create function
 
-![](RackMultipart20220526-1-grk0zj_html_dc6856c671f4401b.png)
+![](images/Img_18_Lab_2.4.png?raw=true)
 
 Now click in the function to configure it.
 
-![](RackMultipart20220526-1-grk0zj_html_b56f2fd87ca9f81e.png)
+![](images/Img_19_Lab_2.4.png?raw=true)
 
 Select Add trigger
 
-![](RackMultipart20220526-1-grk0zj_html_2436bd9fb5062145.png)
+![](images/Img_20_Lab_2.4.png?raw=true)
 
 Select S3 as trigger, choosing the input bucket as source and keep All object create event.
 
-![](RackMultipart20220526-1-grk0zj_html_fad7b6b4bff29e1a.png)
+![](images/Img_21_Lab_2.4.png?raw=true)
 
 Acknowledge the potential recursive S3 action and click in Add
 
-![](RackMultipart20220526-1-grk0zj_html_a98b487be448d121.png)
+![](images/Img_22_Lab_2.4.png?raw=true)
 
 Time to upload the code. Click in Code tab, Upload from and .zip file.
 
-![](RackMultipart20220526-1-grk0zj_html_aedb38eca53a3579.png)
+![](images/Img_23_Lab_2.4.png?raw=true)
 
 Click in Upload button.
 
-![](RackMultipart20220526-1-grk0zj_html_ba98486b734acb6.png)
+![](images/Img_24_Lab_2.4.png?raw=true)
 
 Select the lambda\_function.zip file downloaded previously and hit OK
 
-![](RackMultipart20220526-1-grk0zj_html_de6fc87503505c3b.png)
+![](images/Img_25_Lab_2.4.png?raw=true)
 
-![](RackMultipart20220526-1-grk0zj_html_7b722fa45558cfb0.png)
+![](images/Img_26_Lab_2.4.png?raw=true)
 
 Now it&#39;s time to edit the IAM role, adding the missing permissions
 
-![](RackMultipart20220526-1-grk0zj_html_90a2e0e6ae003801.png)
+![](images/Img_27_Lab_2.4.png?raw=true)
 
 Select Add permissions and Add policies.
 
-![](RackMultipart20220526-1-grk0zj_html_140fbe948a3ad2f2.png)
+![](images/Img_28_Lab_2.4.png?raw=true)
 
 Attach the previous policy created before and click in Attach policy
 
-![](RackMultipart20220526-1-grk0zj_html_17dfce3d172dbfc5.png)
+![](images/Img_29_Lab_2.4.png?raw=true)
 
 1. Now it&#39;s time to test the function. You can use a sample file available here: . Open the S3 console and add the file to the input bucket.
 
-![](RackMultipart20220526-1-grk0zj_html_f0f0f87df3f7217d.png)
+![](images/Img_30_Lab_2.4.png?raw=true)
 
 Open the input bucket
 
-![](RackMultipart20220526-1-grk0zj_html_7ce07a0196f1c272.png)
+![](images/Img_31_Lab_2.4.png?raw=true)
 
 Click in the Upload button
 
-![](RackMultipart20220526-1-grk0zj_html_19c57bcf5c17d279.png)
+![](images/Img_32_Lab_2.4.png?raw=true)
 
 Click in Add file and select a camera image
 
-![](RackMultipart20220526-1-grk0zj_html_d62f5c1d95c117f9.png)
+![](images/Img_33_Lab_2.4.png?raw=true)
 
-![](RackMultipart20220526-1-grk0zj_html_14e34a4e9a0ce08b.png)
+![](images/Img_34_Lab_2.4.png?raw=true)
 
 Click in Upload
 
-![](RackMultipart20220526-1-grk0zj_html_bc6c2f5b843c2bad.png)
+![](images/Img_35_Lab_2.4.png?raw=true)
 
 After a minute, you can check the output bucket that a file started with &quot;clean…&quot; will be in there.
 
-![](RackMultipart20220526-1-grk0zj_html_8d6c18dabea7de2d.png)
+![](images/Img_36_Lab_2.4.png?raw=true)
 
 You can download this file and compare the results with the initial image with the previous one using [https://jimpl.com/](https://jimpl.com/)
 
 1. The function logs can be checked here
 
-![](RackMultipart20220526-1-grk0zj_html_8f09a009819b92d5.png)
+![](images/Img_37_Lab_2.4.png?raw=true)
 
-![](RackMultipart20220526-1-grk0zj_html_9904656311056c74.png)
+![](images/Img_38_Lab_2.4.png?raw=true)
 
-![](RackMultipart20220526-1-grk0zj_html_591f2f8a92d3926d.png)
+![](images/Img_39_Lab_2.4.png?raw=true)
 
-![](RackMultipart20220526-1-grk0zj_html_2b817b82aa9f0bd.png)
+![](images/Img_40_Lab_2.4.png?raw=true)
