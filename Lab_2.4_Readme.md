@@ -12,7 +12,7 @@ Today all pictures come with metadata like GPS info, camera, etc. Here is a usef
 
 Important - The buckets should start with the requested names, otherwise the clean up script will not work.
 
-![](RackMultipart20220526-1-grk0zj_html_e69672f80632b72d.png)
+![](images/Img_02_Lab_2.4.png?raw=true)
 
 ![](RackMultipart20220526-1-grk0zj_html_9e64bcfc687b353b.png)
 
